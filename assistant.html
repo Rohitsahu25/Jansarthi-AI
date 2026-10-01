@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AI Assistant | Jansarthi AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar"><a class="logo" href="index.html">Jansarthi <span>AI</span></a><button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+        <nav id="navMenu"><a href="index.html">Home</a><a href="about.html">About</a><a
+                href="services.html">Services</a><a class="active" href="assistant.html">AI Assistant</a><a
+                href="track.html">Track Request</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <section class="page-hero"><span class="eyebrow">AI Assistant</span>
+        <h1>Ask Jansarthi AI</h1>
+        <p>Prototype assistant for service discovery and application guidance.</p>
+    </section>
+    <section class="section chat-wrap">
+        <div class="chat-box" id="chatBox">
+            <div class="message bot"><b>Jansarthi AI</b><br>Hello! What government service do you need help with?</div>
+        </div>
+        <div class="suggestions"><button onclick="askQuestion('What documents are needed for scholarship?')">Scholarship
+                documents</button><button onclick="askQuestion('How can I track my request?')">Track
+                request</button><button onclick="askQuestion('Tell me about government schemes')">Government
+                schemes</button></div>
+        <div class="chat-input"><input id="userInput" placeholder="Type your question..."
+                onkeydown="if(event.key==='Enter')sendMessage()"><button class="btn primary"
+                onclick="sendMessage()">Send</button></div>
+        <p class="small-note">Demo prototype: connect this interface to a verified RAG/AI backend for real answers.</p>
+    </section>
+    <footer>
+        <p>© 2026 Jansarthi AI · Team BrainByte</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

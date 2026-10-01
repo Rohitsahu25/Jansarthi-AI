@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact | Jansarthi AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar"><a class="logo" href="index.html">Jansarthi <span>AI</span></a><button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+        <nav id="navMenu"><a href="index.html">Home</a><a href="about.html">About</a><a
+                href="services.html">Services</a><a href="assistant.html">AI Assistant</a><a href="track.html">Track
+                Request</a><a class="active" href="contact.html">Contact</a></nav>
+    </header>
+    <section class="page-hero"><span class="eyebrow">Contact</span>
+        <h1>We want to hear from citizens.</h1>
+        <p>Use this prototype form for feedback and support requests.</p>
+    </section>
+    <section class="section form-section">
+        <form onsubmit="submitContact(event)"><label>Name<input required type="text"
+                    placeholder="Your name"></label><label>Email<input required type="email"
+                    placeholder="you@example.com"></label><label>Message<textarea required rows="5"
+                    placeholder="How can we help?"></textarea></label><button class="btn primary" type="submit">Send
+                Message</button>
+            <p id="contactMsg"></p>
+        </form>
+    </section>
+    <footer>
+        <p>© 2026 Jansarthi AI · Team BrainByte</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

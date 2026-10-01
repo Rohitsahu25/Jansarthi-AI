@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Track Request | Jansarthi AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar"><a class="logo" href="index.html">Jansarthi <span>AI</span></a><button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+        <nav id="navMenu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="assistant.html">AI
+                Assistant</a><a class="active" href="track.html">Track Request</a><a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="page-hero"><span class="eyebrow">Request Tracking</span>
+        <h1>Track your request</h1>
+        <p>Enter your demo reference ID to see the current status.</p>
+    </section>
+    <section class="section center">
+        <div class="track-card"><input id="trackId" placeholder="Example: JS-2026-001"><button class="btn primary"
+                onclick="trackRequest()">Check Status</button>
+            <div id="trackResult"></div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 Jansarthi AI · Team BrainByte</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
